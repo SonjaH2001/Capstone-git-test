@@ -16,21 +16,12 @@ def main():
     print(message)
     noSpaceMessage = message.replace(" ", "")
     print(noSpaceMessage)
-    #title(message)
+    lowerCaseChar = noSpaceMessage[:1]
+    lowerCaseChar = lowerCaseChar.lower()
+    camelCaseMessage = lowerCaseChar + noSpaceMessage[1:]
+    print(camelCaseMessage)
 
-
-    # str = "this sucks" TEST
-    # print(str.title)
-
-#def title(message):
-   # titleMessage = print("And in title: " +message.title())
-    #message = message.title()
-
-# def noSpaces
-#     titleMessage = titleMessage.replace(" ", "")
-    # print("And without spaces" + noSpacesMessage())
-
-    print("working hard on code here.")
+    print("working hard on code here.")# thanks Clara
 
 
 
