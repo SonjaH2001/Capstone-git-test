@@ -11,7 +11,9 @@ def main():
     message = input("enter some shit: ")
     #message = print("Please type a few words or short sentence, then press enter: ")
     print("ok, you entered: " + message)#confirm the user entry, easier for them to compare to result
-    #print message.title()
+
+    validData(message)
+
     message = message.title()
     print(message)
     noSpaceMessage = message.replace(" ", "")
@@ -23,6 +25,11 @@ def main():
 
     print("working hard on code here.")# thanks Clara
 
-
+def validData(message):
+    #confirm all valid char in user input
+    if (message) == "":
+        print("Error! please enter some words")
+    elif "!" in message:
+        print("not allowed")
 
 main()
